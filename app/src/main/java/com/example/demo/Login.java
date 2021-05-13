@@ -69,14 +69,12 @@ public class Login extends AppCompatActivity {
                 //Checks
                 if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email is required");
-                    return;
                 }
                 if (!isValidEmail(email)){
                     mEmail.setError("Enter a valid email");
                 }
                 if (TextUtils.isEmpty(password)) {
                     mPassword.setError("Password is required");
-                    return;
                 }
 
                 if (password.length() < 8) {

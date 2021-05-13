@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     //Make a post request to API
                     AndroidNetworking.post("https://api.igdb.com/v4/games")
                             .addHeaders("Client-ID", "c6hmrv9uoe670pghf3rko1lp98f19w")
-                            .addHeaders("Authorization", "Bearer fjxkxpia8c3qxo2b109x7vdjn81vkl")
+                            .addHeaders("Authorization", "Bearer d01qlsm7obbbaftgampfawpx6ntpjt")
                             .addHeaders("Content-Type", "application/json")
                             .addStringBody("search \"" + query + "\";fields name,cover;")
                             .setPriority(Priority.HIGH)
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
                                 //Another POST request for covers
                                 AndroidNetworking.post("https://api.igdb.com/v4/covers")
                                         .addHeaders("Client-ID", "c6hmrv9uoe670pghf3rko1lp98f19w")
-                                        .addHeaders("Authorization", "Bearer fjxkxpia8c3qxo2b109x7vdjn81vkl")
+                                        .addHeaders("Authorization", "Bearer d01qlsm7obbbaftgampfawpx6ntpjt")
                                         .addHeaders("Content-Type", "application/json")
                                         .addStringBody("fields url;where id = " + coversId2String)
                                         .setPriority(Priority.HIGH)
